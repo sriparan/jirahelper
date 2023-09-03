@@ -17,13 +17,10 @@
         "default_title": "Click Me",   
         "default_popup": "popup.html"  
       },
-      "content_scripts":[
-        {
-        "js":["scripts/code.jquery.com_jquery-3.7.0.min.js", "scripts/content.js"],
+      "content_scripts":{
+        "js":"scripts/content.js",
         "matches":[
-          "https://developer.chrome.com/*",
-          "https://jira.cec.lab.emc.com/*"
+          "*"
         ]
       }
-    ]
 }
